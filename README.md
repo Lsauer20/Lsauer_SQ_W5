@@ -19,11 +19,11 @@ The console will show any errors in your sketch.
 
 | File | Source |
 |------|--------|
-| `assets/images/walkguy.png` | Slynyrd, Pixelblog 22: Top Down Character Sprites |
-| `assets/images/crow.png` | Bellanger, C., Animated Coins — OpenGameArt.org |
+| `assets/images/walkguy.png`[1] | getjared, OpenGameArt.org 22: Anime-Collection |
+| `assets/images/crow.png`[2] | maxp, nicepng.com: Sprite Sheet Png |
 
 ## References
 
-Bellanger, C. n.d. *Animated Coins*. OpenGameArt.org. Retrieved May 1, 2026, from https://opengameart.org/content/animated-coins-0
+[1] Bellanger, C. n.d. *Anime-Collection*. OpenGameArt.org. Retrieved June 10, 2026, from https://opengameart.org/content/anime-collection
 
-Slynyrd. 2019. *Pixelblog 22: Top Down Character Sprites*. Slynyrd Blog. Retrieved May 1, 2026, from https://www.slynyrd.com/blog/2019/10/21/pixelblog-22-top-down-character-sprites
+[2] maxp. n.d. *Sprite Sheet Png*. nicepng.com. Retrieved June 10, 2026, from https://www.nicepng.com/maxp/u2q8q8i1q8w7r5i1/ 
