@@ -14,11 +14,11 @@
 // Same structure as Example 1. See that file for full notes.
 // ------------------------------------------------------------
 const SPRITE = {
-  frameWidth:  75,
-  frameHeight: 150,
+  frameWidth:  64,
+  frameHeight: 64,
   numFrames:   4,
   animSpeed:   20,
-  scale:       0.5,
+  scale:       0.7,
   rows: {
     down:  0,
     up:    1,
@@ -28,8 +28,8 @@ const SPRITE = {
   offsets: {
     down:  { x: 0, y: 0  },
     up:    { x: 0, y: 0  },
-    right: { x: 0, y: 10 },
-    left:  { x: 0, y: 20 },
+    right: { x: 0, y: 0 },
+    left:  { x: 0, y: 0 },
   },
 };
 
@@ -38,11 +38,11 @@ const SPRITE = {
 // Same structure as Example 2. See that file for full notes.
 // ------------------------------------------------------------
 const COIN = {
-  frameWidth:  32,
-  frameHeight: 32,
+  frameWidth:  200.3333,
+  frameHeight: 209,
   numFrames:   8,
   animSpeed:   6,
-  scale:       1.5,
+  scale:       0.2,
 };
 
 // ------------------------------------------------------------
@@ -75,10 +75,10 @@ const MAZE = [
 
 // Colours for each tile type — stored as RGB arrays
 const TILE_COLORS = {
-  0: [40,  40,  50 ], // floor — dark grey
-  1: [80,  60,  100], // wall  — purple-grey
-  2: [40,  40,  50 ], // start — same as floor
-  3: [40,  40,  50 ], // coin  — same as floor (coin drawn on top)
+  0: [200,  180,  130], // floor — dark grey
+  1: [0,  120,  100], // wall  — Light Blue
+  2: [200,  180,  130], // start — same as floor
+  3: [200,  180,  130], // coin  — same as floor (coin drawn on top)
   4: [60,  100, 80 ], // exit  — green tint when locked
 };
 
@@ -91,7 +91,7 @@ const TILE_COLORS = {
 let player = {
   x: 0,
   y: 0,
-  speed: 2,
+  speed: 3,
 
   // Animation state
   currentFrame: 0,
@@ -128,8 +128,8 @@ let coinSheet;
 // are ready before the sketch tries to use them.
 // ============================================================
 function preload() {
-  characterSheet = loadImage("assets/images/walking.png");
-  coinSheet      = loadImage("assets/images/coin_gold.png");
+  characterSheet = loadImage("assets/images/walkguy.png");
+  coinSheet      = loadImage("assets/images/crow.png");
 }
 
 // ============================================================
@@ -477,16 +477,16 @@ function drawHUD() {
 // in front of the maze, character, and HUD.
 // ------------------------------------------------------------
 function drawWinScreen() {
-  fill(0, 0, 0, 160);
+  fill(100, 200, 123);
   rectMode(CORNER);
   rect(0, 0, width, height);
 
-  fill(255);
+  fill(100);
   textAlign(CENTER);
   textSize(48);
   text("You Escaped!", width / 2, height / 2 - 20);
 
   textSize(16);
-  fill(180);
+  fill(60);
   text("All coins collected", width / 2, height / 2 + 20);
 }
